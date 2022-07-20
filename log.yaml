@@ -1,0 +1,6 @@
+apiVersion: "stable.coralogix.com/v1"
+kind: Log
+metadata:
+  name: my-new-log-object
+spec:
+  logMessage: "hello world"
