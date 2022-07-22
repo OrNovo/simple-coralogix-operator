@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: coralogix-operator-service
   labels:
-    app: go-app
+    app: coralogix-operator-app
 spec:
   ports:
     - name: web
       port: 2112
       protocol: TCP
   selector:
-    app: go-app
+    app: coralogix-operator-app

@@ -1,13 +1,11 @@
 package main
 
-import (
-	"github.com/golang/glog"
-)
+import "log"
 
 func main() {
 	operator, err := NewCoralogixOperator()
 	if err != nil {
-		glog.Errorln(err.Error())
+		log.Fatal(err.Error())
 	}
 	operator.Run()
 }

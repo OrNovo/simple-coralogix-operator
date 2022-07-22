@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-go-app
+  name: coralogix-operator-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: go-app
+      app: coralogix-operator-app
   template:
     metadata:
       labels:
-        app: go-app
+        app: coralogix-operator-app
     spec:
       containers:
-      - name: go-app-container
-        image: 206347171/coralogix_client
+      - name: coralogix-operator-container
+        image: 206347171/coralogix_operator
         resources:
           limits:
             memory: "128Mi"
