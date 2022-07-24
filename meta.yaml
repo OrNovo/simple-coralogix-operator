@@ -1,0 +1,5 @@
+name: archive-compactor
+CX_PRODUCT: logs-data
+deployable_type: application
+code_language: go
+arch: arm
